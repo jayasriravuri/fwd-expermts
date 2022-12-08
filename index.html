@@ -1,0 +1,92 @@
+<<html>
+ <head>
+ <link rel="stylesheet" href="quiz.css">
+ <title>Quiz</title>
+ </style>
+ <script>
+ function check()
+ {
+ var g,h,n=0,k,j,l;
+ 
+ g=f.r1.value;
+ h=f.r2.value;
+ k=f.r3.value;
+ j=f.r4.value;
+ l=f.r5.value;
+ if(g=="a"){
+ n+=1;
+ }
+ if(h=="c"){
+ n+=1;
+ }
+ if(k=="d"){
+ n+=1;
+ }
+ if(j=="b"){
+ n+=1;
+ }
+ if(l=="c"){
+ n+=1;
+ }
+ document.write("CONGRATS"+"<br>");
+ document.write("MARKS ARE: "+n).value;
+ }
+ </script>
+ </head>
+ <body>
+ <div class="rectangle">
+ <h1 style="text-align: center; font-size: 
+50px;color:darkblue">Quiz</h1>
+ <div class="text">
+ <form name="f">
+ <p>What is the full form of FWD?</p>
+ <input type="radio" name="r2" value="a" >Front Web Developement<br>
+ <input type="radio" name="r2" value="b" >Front Website 
+Developement<br>
+ <input type="radio" name="r2" value="c" >Frontend Web Developement<br>
+ <input type="radio" name="r2" value="d" >Front Web Develope<br>
+ <p>What is the full form of CSS?</p>
+ <input type="radio" name="r3" value="a" >Cascadinatind Stylefront 
+Sheets<br>
+ <input type="radio" name="r3" value="b" >Cascad Style Sheets<br>
+ <input type="radio" name="r3" value="c" >Cascading Styles Sheets<br>
+ <input type="radio" name="r3" value="d" >Cascading Style Sheets<br>
+ <p>What is the full form of HTML?</p>
+ <input type="radio" name="r1" value="a" >Hyper Text Mark up 
+Language<br>
+ <input type="radio" name="r1" value="b" >Hyper Test Mark up 
+Language<br>
+ <input type="radio" name="r1" value="c" >Hyper Text making 
+Language<br>
+ <input type="radio" name="r1" value="d" >High Text Mark up 
+Language<br>
+ <p>Which is used to call a function?</p>
+ <input type="radio" name="r4" value="a" >click<br>
+ <input type="radio" name="r4" value="b" >onclick<br>
+ <input type="radio" name="r4" value="c" >press<br>
+ <input type="radio" name="r4" value="d" >on<br>
+ <p>What is the name of the font used below?<br><i>Frontend Web 
+Developement</i></p>
+ <input type="radio" name="r5" value="a" >Bold<br>
+ <input type="radio" name="r5" value="b" >Cursive<br>
+ <input type="radio" name="r5" value="c" >Italic<br>
+ <input type="radio" name="r5" value="d" >Normal<br>
+ <input type="button" value="submit" onclick="check()">
+ <input type="reset" value="Clear">
+ </div>
+ </form>
+ </div>
+ </body>
+</html>
+---- css-----
+.rectangle{
+ width:400px;
+ height:1000px;
+ border:1px solid green;
+ margin-left: 500px;
+ background-color:light pink;
+}
+.text{
+ margin-left: 50px;
+ font-size: 20px;
+}

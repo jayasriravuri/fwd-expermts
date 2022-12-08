@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            REGISTRATION FORM
+        </title>
+        <link rel="stylesheet" href="10thexp.css">
+    </head>
+    <body>
+        <div class="box">
+            <h1>REGISTRATION FORM</h1>
+        <form name="form1" action="#">
+            <label>NAME</label>
+            <input type="text" class="box1" style="margin-left:90px;" placeholder="full name"><br>
+            <label>PASSWORD</label>
+            <input  class="box1" type="text" style="margin-left:50px;" id="fname" placeholder="Enter Password"><br>
+            <label>EMAIL ADDRESS </label>
+            <input  class="box1" type="email" style="margin-left:10px;" placeholder="Email Address"><br>
+            <label>PHONE NUMBER</label>
+            <input  class="box1" style="margin-left:10px;" placeholder="Phone Number"><br>
+            <label style="margin-left: -170px">GENDER</label>
+            <input type="radio"  name="r1" >Male
+            <input type="radio"  name="r1" >Female<br>
+            <label style="margin-left: -75px">LANGUAGES KNOWN</label>
+            <select name="language" id="lan">
+                <option value="">Select Language</option>
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Tamil">Tamil</option>
+            </select><br>
+            <label>ADDRESS</label>
+            <textarea name="" id="" cols="30" rows="10" style="margin-left:50px;" placeholder="Enter Your Address"></textarea><br>
+            <input class="button" type="submit" onclick="validate(document.form1.text1)"></a>
+    </div>
+</form>
+    </body>
+</html>
+****TENTH CSS*****
+
+
+.box{
+    margin-left: 400px;
+    margin-top: 50px;
+    border: 1px solid black;
+    text-align: center;
+    margin-right: 400px;
+    background-color:rgb(177, 234, 192);
+    border-color:rgb(177, 234, 192);
+}
+.box1{
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: rgb(245, 239, 241);
+    border-color: rgb(246, 238, 241);
+}
+.button{
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(210, 238, 30);
+    border-color: rgb(210, 238, 30);
+    margin-top: 20px;
+}
